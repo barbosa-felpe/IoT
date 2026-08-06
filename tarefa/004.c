@@ -10,8 +10,8 @@ int main(){
     scanf("%f%*c", &pes);
     
     polegadas = pes * 12;
-    jardas = pes * 3;
-    milhas = jardas * 1760;
+    jardas = pes / 3;
+    milhas = jardas / 1760;
     
     printf("A conversão de %.2f Pés\n", pes);
     printf("%.2f Pés para Polegadas: %.2f\n", pes, polegadas);
