@@ -1,28 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-main(){
-	int a, b, c, maior;
-	printf("Digite 3 numeros diferentes: \n");
-	scanf("%d %d %d", &a, &b, &c);
-	
-	maior = 0;
-	
-	if(a<maior){
-		maior = a;
-	}else{
-		maior = a;
-		if (b>maior){
-			maior = b;		
-		}else{
-			maior = b;
-			if (c>maior){
-				maior = b;	
-			}else{
-				maior = c;
-			}
-		}
-	}
-	
-	printf("O maior numero é o %d", maior);
+int main()
+{
+	int n1, n2, n3, maior;
+	printf("Digite tres numeros qualque: \n");
+	scanf("%d %d %d", &n1, &n2, &n3);
+	if((n1 > n2) && (n1 > n3))
+		maior = n1;
+	else if((n2 > n3) && (n2 > n1))
+		maior = n2;
+	else if((n3 > n1) && (n3 > n2))
+		maior = n3;
+	else if(n1 == n2)
+		maior = n1;
+	else if(n1 == n3)
+		maior = n1;
+	else if(n2 == n3)
+		maior = n2;
+	printf("\nO maior numero e: %d", maior);
 }
